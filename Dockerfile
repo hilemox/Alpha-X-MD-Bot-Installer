@@ -3,7 +3,7 @@ FROM node:latest
 
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get install ffmpeg -y
-RUN git clone https://github.com/hilem/HIL3M-V5 /root/AlphaXmd
+RUN git clone https://github.com/hil3m/HIL3M-V5 /root/AlphaXmd
 WORKDIR /root/AlphaXmd/
 RUN yarn install --no-audit
 RUN npm i -g supervisor
